@@ -1,15 +1,13 @@
 import React from "react";
+import styled from 'styled-components';
+import './styles.css';
 
 export default function WelcomePage() {
+
   return (
     <section className="welcome-page">
       <header>
-        <h1>Welcome to the ultimate fan site!</h1>
-        <img
-          className="main-img"
-          src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-          alt="rick"
-        />
+        <h2>Welcome to the ultimate fan site!</h2>
       </header>
     </section>
   );

@@ -7,7 +7,7 @@ import CharacterList from './components/CharacterList';
 export default function App() {
 
   return (
-    <main>
+    <html>
       <Header />
       <Route exact path="/">
         <WelcomePage />
@@ -15,6 +15,6 @@ export default function App() {
       <Route path="/characters">
         <CharacterList />
       </Route>
-    </main>
+    </html>
   );
 }

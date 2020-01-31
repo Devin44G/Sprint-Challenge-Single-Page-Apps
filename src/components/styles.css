@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|Sigmar+One&display=swap');
+
+html{
+  font-size: 62.5%;
+  background: url('https://rickandmortyapi.com/api/character/avatar/1.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+h1 {
+  font-size: 5rem;
+  font-family: 'Sigmar One', cursive;
+  color: #101d0b;
+}
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Sigmar One', cursive;
+  color: #289304;
+}
+p, nav, li {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2rem;
+}
+li {
+  color: #101d0b;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #289304;
+  margin-right: 2rem;
+}
+input {
+  background-color: #eee;
+  border-radius: 10px;
+  border-style: none;
+  padding: 1rem 2rem;
+  width: 40%;
+}

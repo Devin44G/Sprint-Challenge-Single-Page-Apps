@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import styled from 'styled-components';
+import './styles.css';
 
 export default function Characters() {
   const [data, setData] = useState([]);
@@ -19,30 +21,52 @@ export default function Characters() {
   const changeHandler = event => {
     setSearch(event.target.value);
   };
+
+  const Form = styled.form`
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+  `;
+  const Card = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  `;
+  const IndCard = styled.div`
+    width: 40%;
+    display: flex;
+    align-items: center;
+    background-color: #c0ffb6;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+  `;
+
   return (
     <div>
-      <form>
+      <Form>
         <input
           type="text"
           placeholder="Ah gee, you should do a search!"
           onChange={changeHandler}
           value={search}
         />
-      </form>
-      <div>
+      </Form>
+      <Card>
         {data.map(data => {
           return (
-            <div className="char-card" key={data.id}>
+            <IndCard key={data.id}>
               <h2>{data.name}</h2>
               <ul>
                 <li>Species: {data.species}</li>
                 <li>Status: {data.status}</li>
                 <li>Location: {data.location.name}</li>
               </ul>
-            </div>
+            </IndCard>
           );
         })}
-      </div>
+      </Card>
     </div>
   );
 }
