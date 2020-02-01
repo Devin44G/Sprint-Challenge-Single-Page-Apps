@@ -2,8 +2,9 @@
 
 html{
   font-size: 62.5%;
-  background: url('https://rickandmortyapi.com/api/character/avatar/1.jpeg') no-repeat center center fixed;
+  background: url('../imgs/randm.jpg') no-repeat center center fixed;
   background-size: cover;
+  width: 100%;
 }
 h1 {
   font-size: 5rem;
@@ -30,6 +31,11 @@ a {
   text-decoration: none;
   color: #289304;
   margin-right: 2rem;
+  z-index: 1;
+}
+a:hover {
+  font-size: 2.3rem;
+  color: #101d0b;
 }
 input {
   background-color: #eee;
@@ -37,4 +43,9 @@ input {
   border-style: none;
   padding: 1rem 2rem;
   width: 40%;
+}
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
 }

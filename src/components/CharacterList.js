@@ -22,11 +22,6 @@ export default function Characters() {
     setSearch(event.target.value);
   };
 
-  const Form = styled.form`
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3rem;
-  `;
   const Card = styled.div`
     display: flex;
     flex-wrap: wrap;
@@ -45,14 +40,14 @@ export default function Characters() {
 
   return (
     <div>
-      <Form>
+      <form>
         <input
           type="text"
           placeholder="Ah gee, you should do a search!"
           onChange={changeHandler}
           value={search}
         />
-      </Form>
+      </form>
       <Card>
         {data.map(data => {
           return (

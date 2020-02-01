@@ -16,13 +16,23 @@ export default function Header() {
   const Header = styled.header`
     display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 50vh;
+  `;
+  const Span = styled.span`
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+    background-color: #eee;
+    opacity: .8;
   `;
 
   return (
     <Header>
       <Nav>
-        <Link to='/characters'>The Gang</Link>
+        <Span></Span>
         <Link to='/'>Home</Link>
+        <Link to='/characters'>The Gang</Link>
       </Nav>
       <h1>Rick &amp; Morty Fan Page</h1>
     </Header>
